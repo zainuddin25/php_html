@@ -1,0 +1,13 @@
+$("#font").on("keyup",function(){
+    if($(this).val())
+        $(".glyphicon-eye-open").show();
+    else
+        $(".glyphicon-eye-open").hide();
+    });
+$(".glyphicon-eye-open").mousedown(function(){
+                $("#font").attr('type','text');
+            }).mouseup(function(){
+                $("#font").attr('type','password');
+            }).mouseout(function(){
+                $("#font").attr('type','password');
+            });
